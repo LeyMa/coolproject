@@ -1,6 +1,6 @@
-import {Component} from "@angular/core/src/metadata/directives";
+import {Component} from "@angular/core";
 @Component({
     moduleId:module.id,
-    templateUrl: 'page-wrapper.component.html'
+    templateUrl: 'dashboard.component.html'
 })
-export class PageWrapperComponent {}
+export class DashboardComponent {}
