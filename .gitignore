@@ -1,2 +1,4 @@
 .*log
 .idea
+app/**/*.js
+app/**/*.js.map
