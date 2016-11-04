@@ -1,9 +1,9 @@
 import {Routes, RouterModule} from "@angular/router";
-import {PageWrapperComponent} from "./components/page-wrapper.component";
-import {AppComponent} from "./app.component";
+import {DashboardComponent} from "./modules/dashboard/dashboard.component";
 const routes: Routes = [
-    {path: '',component:AppComponent},
-    // {path: 'wrapper', component: PageWrapperComponent}
+    {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+    {path: 'dashboard', component: DashboardComponent},
+    {path: 'float-charts', loadChildren: 'app/modules/float-charts/float-charts.module#FloatChartsModule'}
 ];
 
 const appRoutes: Routes = [
