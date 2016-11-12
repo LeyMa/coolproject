@@ -19,6 +19,7 @@ export class AuthenticationAuthorizationService {
 
     public login(email: string, password: string): Observable<boolean> {
         if (email === 'admin' && password === 'admin') {
+            console.log(email === 'admin');
             localStorage.setItem("auth", 'admin');
             this.isLogged.next(true);
         }
